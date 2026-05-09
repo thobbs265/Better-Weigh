@@ -1,0 +1,2 @@
+# Better-Weigh
+Privacy Policy
