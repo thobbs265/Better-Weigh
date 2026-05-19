@@ -36,6 +36,27 @@ removes it. You can also export it at any time from inside the app
 
 ---
 
+## Health Connect (Android)
+
+If you grant the app permission, Better Weigh reads your daily **step count**
+from Google Health Connect to show calories burned from walking. Specifically,
+the app requests:
+
+- `android.permission.health.READ_STEPS` — daily step totals
+- `android.permission.ACTIVITY_RECOGNITION` — fallback for the on-device
+  hardware step counter when Health Connect is unavailable
+
+The step count is used **only** to display today's steps and estimated calorie
+burn on your home screen, and is saved to the local daily-log file. Step data
+is never transmitted off your device unless you choose to use one of the
+optional features described below.
+
+You can revoke Health Connect permissions at any time in:
+**Settings → Apps → Health Connect → App Permissions** on Android, or by
+uninstalling the app.
+
+---
+
 ## Optional Features That Send Data Off-Device
 
 Two optional, **off-by-default** features in Better Weigh transmit data to a
